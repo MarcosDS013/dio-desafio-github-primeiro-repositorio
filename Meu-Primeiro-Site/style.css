@@ -1,0 +1,249 @@
+:root {
+    font-size: 62.5%;
+    --primary-color: hsl(270, 100%, 42%);
+    --brand-light: hsl(268, 23%, 89%);
+    --brand-beige: hsl(39, 100%, 97%);
+    --brand-dark: hsl(170, 100%, 14%);
+}
+
+body {
+    font-family: 'DM Sans';
+    font-size: 1.6rem;
+
+}
+/*==========MENU-INICIAL==========*/
+ul {
+    width:100%; 
+    float:left; 
+    text-align:center; 
+}
+li {
+    padding-right: 2rem;
+    display: inline-block;
+    list-style:none;
+}
+li .mymenu {
+   font-family: 'DM Sans';
+   font-size:1.6em;
+   text-decoration: none;
+   color: var(--primary-color);
+   -webkit-border-box: 0 1px 0 0 black;
+   border-bottom: 4px solid transparent;
+   
+}
+li .mymenu:hover {
+    border-bottom:4px solid black;
+}
+
+.info{
+    display: flex;
+    justify-content: flex-start;
+}
+.info img,
+.info div{
+    padding: 1rem
+}
+
+nav.topo {
+   width: 100rem;
+   margin-top: 1rem;
+   display: flex;
+   margin-inline: auto;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.topo img {
+    width: 40rem;
+    height: 20rem;
+}
+
+.button img {
+    width: 24rem;
+    height: 6rem;
+    border: none;
+    margin-top: 3rem;
+
+}
+
+.button img:hover {
+    opacity: 70%;
+}
+
+/*===========CABEÇALHO-INICIAL============*/
+#info {
+    margin-top: 7%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "A B"
+    "C C"; 
+}
+
+#info .col-a {
+    grid-area: A;
+}
+
+#info .col-b {
+    grid-area: B;
+}
+
+#info .caixas {
+    grid-area: C;
+}
+
+header::before {
+    content: "";
+    width: 100vw;
+    height: 60rem;
+    background-color: var(--brand-light);
+    display: block;
+    position: absolute;
+    top: 5;
+    z-index: -1;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+h1 {
+    font-size: 5.2rem;
+    line-height: 130%;
+}
+
+p {
+    font-size: 1.9rem;
+    line-height: 150%;
+    font-weight: 400;
+}
+
+.caixas {
+    width: 110rem;
+    height: 20rem;
+    padding: 6rem;
+    margin-inline: auto;
+    margin-top: -4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--brand-beige);
+    border: 1px solid var(--brand-light);
+    border-radius: 0.8rem;
+    gap: 6rem;
+}
+
+.caixas .caixa + .caixa {
+    border-left: 1px solid var(--primary-color);
+}
+
+.caixas .caixa {
+    flex: 1;
+}
+
+.caixa h3 {
+    font-size: 4.8rem;
+    line-height: 130%;
+}
+
+.caixa p {
+    margin: 0%;
+    color: var(--primary-color);
+    
+}
+
+header img {
+    width: 47rem;
+    height: 57rem;
+    display: flex;
+    margin-inline-end: auto;
+    margin-top: 2rem;
+}
+
+header .button img {
+    width: 26rem;
+    height: 10rem;
+    margin-inline: auto;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: -5rem;
+}
+
+
+/*==============SERVIÇOS===============*/
+
+#services h4 {
+    font-size: 2rem;
+    line-height: 10rem;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+
+}
+
+#services h2 {
+    font-size: 3rem;
+    width: 47rem;
+    text-align: center;
+    line-height: 4rem;
+    margin-inline: auto;
+
+}
+
+#services .card {
+    display: inline-block;
+    align-items: center;
+    padding: 2.4rem;
+    text-align: left;
+    background: white;
+    border: 1px solid var(--brand-light);
+    box-sizing: border-box;
+    border-radius: 0.6rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 33%;
+    margin-bottom: 5rem;
+    margin-inline: auto;
+}
+
+
+
+/*==============RODAPÉ===============*/
+footer {
+    background-color: var(--primary-color);
+    padding-block: 6rem;
+    text-align: center;
+    color: white;
+}
+
+footer .logo svg {
+    width: 24rem;
+    height: 4rem;
+}
+
+footer .logo path {
+    fill: white;
+}
+
+footer p {
+    line-height: 2rem;
+    margin-bottom: 3.2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-start
+}
+
+#backToTopButton {
+    position: fixed;
+    bottom: 1rem;
+    right: 2.5rem;
+}
+
+
+
