@@ -19,7 +19,7 @@
         <a href="" target="">
             <img src="assets/LogoMarcosDS.png"/>               
         </a>
-        <a class="button" href="#info" target="_blank">
+        <a class="button" href="#inscricao">
             <img src="assets/MeChama.png"/>
         </a>
     </nav>
@@ -37,7 +37,7 @@
             <div class="col-b">
             <img src="assets/Jovem-negro-pensativo-de-oculos.png" alt=""></div>
             <div class="col-a">
-                <h4>BOAS-VINDAS AO MUNDO DE MARCOS 👋</h4>
+                <h4>BOAS-VINDAS AO MUNDO D0 <i>MARCOS DIAS SILVA</i> 👋</h4>
                 <h1>ALUNO DA (ETEC) ESCOLA TÉCNICA DRa. RUTH CARDOSO.</h1>
                 <p>Atualmente sou integrante do escopo de alunos do curso de Desenvolvimento de Sistemas da instituição citada acima e espero com isso me proporcionar uma curva de aprendizado muito valiosa de médio a longo prazo.</p>
                 <a class="button" href="https://wa.me/5513988217750" target="_blank">
@@ -63,7 +63,7 @@
             </div>
         </section>
     </header>
-
+        
     <header>
         <section id="services" class="cards">
 
@@ -128,10 +128,59 @@
                         <h3>Ser a mudança para mim e minha família</h3>
                         <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
                     </div>
-
+                    <div class="aulaPW">
+                        <div class="box">1</div>
+                        <div class="box">D</div>
+                        <div class="box">S</div>
+                        <div class="box">3</div>
+                    </div>
             </div>
         </section>
     </header>
+
+    <div class="aula-dd_fi">
+        <img src="/assets/homem-negro-usando-celular.png">
+    </div>
+<article class="formulario">
+    <h1>Formulário de Contato.</h1>
+    <p>Não quer assunto pelo Zap?<br> 
+    Ok Preencha o formulário e me mande uma mensagem.</p>
+
+    <fieldset>
+        <legend>
+        <h5>Dados de Contato.</h5>
+    </legend>
+        <form id="inscricao" action="contato.php" method="post">
+
+        <label>Nome: </label><br>
+        <input type="text" required="required" id="nome" maxlength="100" size="50"><br><br>
+        <input type="radio" name="sexo" value="M" required="required">
+        <label>Masculino</label><br>
+        <input type="radio" name="sexo" value="F">
+        <label>Feminino</label><br>
+        <input type="radio" name="sexo" value="I">
+        <label>Indefinido</label><br><br>
+       
+        <label>Email: </label><br>
+        <input type="email" required="required" size="50" id="email"><br><br>
+        
+        <label>Celular:</label><br>
+        <input type="tel" required="required" id="txtCelular" size="50" placeholder="(##) #####-####" maxlength="15"><br><br>
+        
+        <label>Qual será o Assunto:</label><br>
+        <label>Dúvidas</label>
+        <input type="checkbox" value="Dúvidas" name="assunto"><br>
+        <label>Sugestões</label>
+        <input type="checkbox" value="Sugestões" name="assunto"><br>
+        <label>Críticas</label>
+        <input type="checkbox" value="Críticas" name="assunto"><br><br>
+        
+        <label>Mensagem:</label><br>
+        <textarea cols="50" rows="5" required="required"></textarea><br><br>
+        <input id="btnEnviar" type="submit" value="Enviar" />
+        </form>
+    </fieldset>
+</article>
 
 <footer>
 
